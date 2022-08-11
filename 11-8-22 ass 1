@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+  int n,sum=0,mult=1,res,r;
+  printf("ENTER A NUMBER");
+  scanf("%d",&n);
+  while(n>0)
+  {
+    r=n%10;
+    mult=mult*r;
+    sum=sum+r;
+    n=n/10;
+  }
+  printf("Product is %d\n",mult);
+  printf("sum is %d\n",sum);
+  if(mult>sum)
+  {
+    res=mult-sum;
+  }
+  else
+  {
+    res=sum-mult;
+  }
+  printf("%d",res);
+  return 0;
+}
