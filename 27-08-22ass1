@@ -1,0 +1,74 @@
+#include <stdio.h>
+
+int main()
+{
+    char s1[20],s2[30];
+    int i,j,n1,n2,count=0;
+    int temp1,temp2;
+    printf("Enter a string");
+    gets(s1);
+    printf("Enter another string");
+    gets(s2);
+    for(i=0;s1[i]!='\0';i++);
+    n1=i;
+    for(j=0;s2[j]!='\0';j++);
+    n2=j;
+    if(n1==n2)
+    {
+    for(i=0;i<n1;i++)
+    {
+      for(j=i+1;j<n1;j++)
+      {
+        if(s1[i]>s1[j])
+        {
+          temp1=s1[i];
+          s1[i]=s1[j];
+          s1[j]=temp1;
+        }
+      }
+    
+    //printf("%c",s1[i]);
+    }
+    printf ("\n");
+    
+    for(i=0;i<n2;i++)
+    {
+      for(j=i+1;j<n2;j++)
+      {
+       
+        if(s2[i]>s2[j])
+        {
+          temp2=s2[i];
+          s2[i]=s2[j];
+          s2[j]=temp2;
+        }
+    }
+    }
+  for(i=0;i<n1;i++)
+   {
+  
+     if(s1[i]==s2[i])
+        
+        {
+          count++;
+          }
+          }
+          if(count==n1)
+          {
+   
+      printf(" Anagram ");
+    }
+    else
+    {
+    printf(" not anagram ");
+  }
+  }
+  
+  else
+{
+  printf("impossible to find");
+}
+  
+    return 0;
+
+}
