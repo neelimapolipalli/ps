@@ -1,0 +1,12 @@
+sno=int(input('enter sno:'))
+name=input('enter name:')
+group=input('enter group:')
+s1=int(input('enter subject1:'))
+s2=int(input('enter subject2:'))
+s3=int(input('enter subject3:'))
+if(s1>=35)and(s2>=35)and(s3>=35):
+    print(sno,name,group,"pass")
+else:
+    print(sno,name,group,"fail")
+          
+
