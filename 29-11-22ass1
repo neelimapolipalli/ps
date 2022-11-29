@@ -1,0 +1,16 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+if a>b:
+    if a>c:
+        if a>d:
+            print('a is big')
+if b>c:
+    if b>d:
+        print('b is big')
+if c>d:
+    print('c is big')
+else:
+    print('d is big')
+
