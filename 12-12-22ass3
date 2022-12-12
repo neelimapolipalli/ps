@@ -1,0 +1,9 @@
+n=int(input())
+l=list(map(int,input().split()))
+print(l)
+print("0th index element:",l[0])
+print("2nd index element:",l[2])
+print("4th index element:",l[4])
+
+
+
