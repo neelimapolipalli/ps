@@ -1,0 +1,6 @@
+n=int(input('Enter number of districts'))
+ap=list(input().split())
+ap.sort()
+print(ap)
+
+
