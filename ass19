@@ -1,0 +1,6 @@
+n=int(input())
+l=n**0.5
+if(l>10):
+    print("Hello")
+else:
+    print("Hii")
