@@ -1,0 +1,23 @@
+l=list(map(int,input().split()))
+d={}
+for i in l:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]=d[i]+1
+m=list(d.values())
+k=max(m)
+r=min(m)
+for i in d:
+    if d[i]==k:
+        n1=i
+        print('max=',n1)
+    elif d[i]==r:
+        n2=i
+        print('min=',n2)
+if n1>n2:
+    print('diff:',n1-n2)
+else:
+    print('diff:',n2-n1)
+        
+    
