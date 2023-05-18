@@ -1,8 +1,8 @@
 class Solution:
-    def isPowerOfThree(self, n: int) -> bool:
+    def isPowerOffour(self, n: int) -> bool:
         if n==1:
             return True
-        elif n%3>=1:
+        elif n%4>=1:
             return False
         else:
-            return n>1 and self.isPowerOfTwo(n//3)
+            return n>1 and self.isPowerOffour(n//4)
