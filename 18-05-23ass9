@@ -5,4 +5,4 @@ class Solution:
         elif n%3>=1:
             return False
         else:
-            return n>1 and self.isPowerOfTwo(n//3)
+            return n>1 and self.isPowerOfThree(n//3)
