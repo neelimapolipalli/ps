@@ -1,0 +1,13 @@
+def is_power_of_number(n,i):
+    if n==1:
+        return True
+    if n<1 or n%i!= 0:
+        return False
+    return is_power_of_number(n/i,i)
+
+n=int(input())
+if n>0:
+   print(1)
+for i in range(2,n):
+    if is_power_of_number(n,i):
+     print(i)
